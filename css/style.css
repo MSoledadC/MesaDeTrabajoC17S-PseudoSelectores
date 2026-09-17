@@ -201,39 +201,6 @@ footer {
     width: 130px;
 }
 
-/* Tablets  */
-
-@media (max-width: 768px) {
-    .pie-pagina span {
-        font-size: 15px;
-    }
-
-    .pie-pagina img {
-        width: 120px;
-    }
-}
-
-/* Smartphones */
-
-@media (max-width: 480px) {
-    .pie-pagina span {
-        font-size: 10px;
-    }
-
-    .pie-pagina img {
-        width: 80px;
-        position: inherit;
-    }
-
-    .pie-pagina {
-        padding-left: 10px;
-    }
-
-    .toptop {
-        font-size: 35px;
-    }
-}
-
 
 /* FORMULARIO  */
 
@@ -248,12 +215,12 @@ footer {
     max-width: 750px;
     margin: 20px auto;
     color: #FFFFFF;
-
 }
 
 form h2 {
     font-size: 40px;
     font-weight: 700;
+    padding-top: 10px;
 }
 
 form p {
@@ -328,4 +295,68 @@ hr {
     border-radius: 20px;
     margin-bottom: 10px;
     border: none;
+}
+
+/* Tablets  */
+
+@media (max-width: 768px) {
+    .pie-pagina span {
+        font-size: 15px;
+    }
+
+    .pie-pagina img {
+        width: 120px;
+    }
+}
+
+/* Smartphones */
+
+@media (max-width: 480px) {
+    .top-nav {
+        font-size: 12px;
+        height: 5px;
+        padding: 5px;
+        padding-bottom: 16px;
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    .form h2 {
+        font-size: 35px;
+    }
+
+    .form-col {
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .form-columnas {
+        width: 80%;
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    .btn-form {
+        font-size: 25px;
+        max-width: 250px;
+    }
+
+    .pie-pagina span {
+        font-size: 10px;
+    }
+
+    .pie-pagina img {
+        width: 80px;
+        position: inherit;
+    }
+
+    .pie-pagina {
+        padding-left: 10px;
+    }
+
+    .toptop {
+        font-size: 35px;
+    }
 }
