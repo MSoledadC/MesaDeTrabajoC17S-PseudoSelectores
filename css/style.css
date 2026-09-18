@@ -27,6 +27,11 @@ ul li {
     list-style: none;
 }
 
+nav ul li:hover {
+    background-color: rgb(204, 36, 36);
+    padding: 5px;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -158,49 +163,22 @@ section {
     line-height: 50px;
 }
 
+.boton-vermas:hover {
+    background-color: #001D2D;
+}
+
 .toptop {
-    display: inline-block;
     position: fixed;
     bottom: 90px;
     right: 5px;
     color: #00669F;
     font-size: 50px;
+    z-index: 999;
 }
 
-footer {
-    text-align: left;
-    background-color: #005677;
-    color: #FFFFFF;
-    padding: 20px;
-    width: 100%;
-    margin-top: 45px;
+.toptop:hover {
+    color: #001D2D;
 }
-
-
-/* padding: 30px 0;*/
-
-
-.pie-pagina {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.pie-pagina span {
-    width: 100%;
-    text-align: center;
-    color: #FFF9F9;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.pie-pagina img {
-    position: absolute;
-    right: 30px;
-    width: 130px;
-}
-
 
 /* FORMULARIO  */
 
@@ -215,12 +193,12 @@ footer {
     max-width: 750px;
     margin: 20px auto;
     color: #FFFFFF;
+
 }
 
 form h2 {
     font-size: 40px;
     font-weight: 700;
-    padding-top: 10px;
 }
 
 form p {
@@ -297,15 +275,62 @@ hr {
     border: none;
 }
 
+.btn-form:hover {
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+
+footer {
+    text-align: left;
+    background-color: #005677;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+
+/* padding: 30px 0;*/
+
+
+.pie-pagina {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pie-pagina span {
+    width: 100%;
+    text-align: center;
+    color: #FFF9F9;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pie-pagina img {
+    position: absolute;
+    right: 30px;
+    width: 130px;
+}
+
 /* Tablets  */
 
 @media (max-width: 768px) {
+    .formulario {
+        width: 85%;
+    }
+
+    .toptop {
+        font-size: 45px;
+        right: 3px;
+    }
+
     .pie-pagina span {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .pie-pagina img {
-        width: 120px;
+        width: 110px;
     }
 }
 
@@ -325,6 +350,10 @@ hr {
 
     .form h2 {
         font-size: 35px;
+    }
+
+    .form p {
+        font-size: 10px;
     }
 
     .form-col {
@@ -358,5 +387,6 @@ hr {
 
     .toptop {
         font-size: 35px;
+        right: 3px;
     }
 }
